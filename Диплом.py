@@ -503,26 +503,6 @@ def click_button2():
             manager.create_boxplot1(column, n_clusters)
             cluster_manager_data.append(manager)
 
-
-
-    #if not cluster_manager_data:
-
-    #    for i, column in enumerate(cluster_data):
-    #        cluster_canvas_span = Canvas(tab1_frame, width= 1000, height=700)
-    #        cluster_canvas_span_data.append(canvas_span)
-    #        cluster_frame_span = Frame(canvas_span)
-    #        cluster_frame_span_data.append(frame_span)
-    #        cluster_canvas_span_data[i].pack(fill = "both", expand = True)
-    #        cluster_canvas_span_data[i].create_window((0, 0), window = frame_span_data[i], anchor = "nw")
-    #        label = Label(tab2_frame, text=f'Диаграмма размаха {data.columns[i]}')
-    #        label.pack(padx=10, pady=10)
-    #        cluster_label_data.append(label)
-
-    #        manager = VisualizationManager(tab2_canvas, tab2_frame)
-
-    #        manager.create_boxplot1(column, n_clusters)
-    #        cluster_manager_data.append(manager)
-
 def potoki():
     global pb1
     pb1.start()
@@ -665,3 +645,4 @@ build_button = Button(tab2_frame, text="Построй", command=potoki)
 build_button.pack(padx=10, pady=10)
 
 window.mainloop()
+
